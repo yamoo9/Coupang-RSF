@@ -1,0 +1,24 @@
+# .github/workflows/chromatic.yml
+
+# 워크 플로우 이름
+name: 'Chromatic 배포'
+
+# 워크 플로우 이벤트
+on: push
+
+# 작업 목록
+jobs:
+  test:
+    # 운영 체제(OS)
+    runs-on: ubuntu-latest
+    # 작업 단계
+    steps:
+      - uses: actions/checkout@v1
+      - run: yarn
+        #👇 워크 플로우 단계로 Chromatic을 추가
+      - uses: chromaui/action@v1
+        # Chromatic GitHub 작업에 필요한 옵션
+        with:
+          #👇 Chromatic projectToken 입력. 참고 https://storybook.js.org/tutorials/intro-to-storybook/react/en/deploy/
+          projectToken: 274e5df260b3
+          token: ${{ secrets.GITHUB_TOKEN }}
