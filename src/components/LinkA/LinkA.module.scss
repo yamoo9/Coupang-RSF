@@ -1,0 +1,20 @@
+.link {
+  min-width: 60px;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  padding: 1.687em 1.25em;
+  font: 1rem/1 SpoqaHanSans;
+  text-decoration: none;
+  vertical-align: middle;
+  color: #555;
+
+  svg {
+    pointer-events: none;
+    margin-left: 3px;
+  }
+
+  &:hover {
+    color: #111;
+  }
+}

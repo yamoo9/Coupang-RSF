@@ -1,0 +1,20 @@
+.button {
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  padding: 0.5em;
+  font: bold 0.9375rem/1 SpoqaHanSans;
+  background: #fafafa;
+  color: #555;
+
+  &:hover {
+    color: #111;
+    border-color: #aaa9a9;
+  }
+
+  &[disabled] {
+    cursor: not-allowed;
+    color: #555;
+    border-color: #ccc;
+  }
+}

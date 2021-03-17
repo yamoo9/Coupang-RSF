@@ -1,0 +1,82 @@
+$white: #ffffff;
+$black: #111111;
+$gray: #929292;
+$red: #e52528;
+
+.formControl {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.inputWrapper {
+  position: relative;
+  display: inline-flex;
+  min-width: 296px;
+}
+
+.inputWrapperError {
+  position: relative;
+  border: 1px solid $red;
+}
+
+.input {
+  flex: 1;
+  border: 0;
+  padding: 0.875em;
+  font: 500 1rem/1.375 'Noto Sans';
+  background: $white;
+  color: $black;
+
+  &::placeholder {
+    color: $gray;
+  }
+
+  &:read-only {
+    color: $gray;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    color: $gray;
+  }
+}
+
+.label {
+  display: inline-block;
+  margin-bottom: 4px;
+  color: #24292e;
+  font-size: 13px;
+  // 접근성 감춤 설정
+  &Hidden {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    clip-path: circle(0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+  }
+}
+
+.button {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+
+  img {
+    vertical-align: bottom;
+  }
+}
+
+.error {
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 15px;
+  color: $red;
+}

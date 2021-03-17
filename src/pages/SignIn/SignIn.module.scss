@@ -1,0 +1,36 @@
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 576px;
+  padding: 5vw;
+  @media (min-width: 37.5em /* 600px */) {
+    padding: 0;
+  }
+}
+
+.homeLink {
+  width: 247px;
+  margin-top: 0;
+  margin-bottom: 50px;
+  a {
+    display: block;
+  }
+}
+
+.form {
+  margin-bottom: 40px;
+}
+
+.copyright {
+  color: #555;
+  font-size: 14px;
+}

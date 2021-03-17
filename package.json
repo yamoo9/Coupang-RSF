@@ -1,0 +1,93 @@
+{
+  "name": "coupang-ui-cdd",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/react": "^11.2.5",
+    "@testing-library/user-event": "^12.8.3",
+    "react": "^17.0.1",
+    "react-app-polyfill": "^2.0.0",
+    "react-dom": "^17.0.1",
+    "react-scripts": "4.0.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "serve": "serve -s build",
+    "build-and-serve": "npm run build && npm run serve",
+    "storybook": "start-storybook -p 6006 -s public --no-manager-cache",
+    "build-storybook": "build-storybook -s public -o ./docs",
+    "deploy-storybook": "storybook-to-ghpages",
+    "deploy-storybook-build-directory": "storybook-to-ghpages --out=.out",
+    "deploy-storybook-skip-build-step": "storybook-to-ghpages --existing-output-dir=.out",
+    "deploy-storybook-skip-deploy-step": "storybook-to-ghpages --dry-run"
+  },
+  "storybook-deployer": {
+    "gitUsername": "yamoo9",
+    "gitEmail": "yamoo9@naver.com",
+    "commitMessage": "Storybook 배포"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest",
+      "plugin:jsx-a11y/recommended"
+    ],
+    "plugins": [
+      "jsx-a11y"
+    ],
+    "rules": {
+      "import/no-anonymous-default-export": "off",
+      "jsx-a11y/no-noninteractive-element-interactions": [
+        "error",
+        {
+          "handlers": [
+            "onClick",
+            "onMouseDown",
+            "onMouseUp",
+            "onKeyPress",
+            "onKeyDown",
+            "onKeyUp"
+          ]
+        }
+      ]
+    }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2% in KR",
+      "not dead",
+      "not op_mini all",
+      "not ie < 11"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@storybook/addon-a11y": "^6.1.21",
+    "@storybook/addon-actions": "^6.1.21",
+    "@storybook/addon-controls": "^6.1.21",
+    "@storybook/addon-essentials": "^6.1.21",
+    "@storybook/addon-knobs": "^6.1.21",
+    "@storybook/addon-links": "^6.1.21",
+    "@storybook/addons": "^6.1.21",
+    "@storybook/node-logger": "^6.1.21",
+    "@storybook/preset-create-react-app": "^3.1.7",
+    "@storybook/react": "^6.1.21",
+    "@storybook/storybook-deployer": "^2.8.7",
+    "@storybook/theming": "^6.1.21",
+    "axe-core": "^4.1.3",
+    "classnames": "^2.2.6",
+    "dotenv": "^8.2.0",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "sass": "^1.32.8",
+    "serve": "^11.3.2",
+    "storybook-addon-designs": "^6.0.0-alpha.3"
+  }
+}

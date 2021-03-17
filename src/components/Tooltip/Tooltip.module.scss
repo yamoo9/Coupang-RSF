@@ -1,0 +1,60 @@
+$bg: #f4f4f4;
+
+.tooltip {
+  position: absolute;
+  min-width: 266px;
+  padding: 0.5em 0.75em;
+  font: 12px/1.3 'Noto Sans';
+  border-radius: 2px;
+  background: $bg;
+  color: #555555;
+
+  &::before {
+    position: absolute;
+    content: '';
+    border: 5px solid $bg;
+  }
+}
+
+.orientation {
+  &Top {
+    &::before {
+      top: -10px;
+      border: {
+        right-color: transparent;
+        left-color: transparent;
+        top-color: transparent;
+      }
+    }
+  }
+  &Right {
+    &::before {
+      right: -10px;
+      border: {
+        top-color: transparent;
+        bottom-color: transparent;
+        right-color: transparent;
+      }
+    }
+  }
+  &Bottom {
+    &::before {
+      bottom: -10px;
+      border: {
+        right-color: transparent;
+        left-color: transparent;
+        bottom-color: transparent;
+      }
+    }
+  }
+  &Left {
+    &::before {
+      left: -10px;
+      border: {
+        left-color: transparent;
+        top-color: transparent;
+        bottom-color: transparent;
+      }
+    }
+  }
+}

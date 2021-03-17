@@ -1,0 +1,23 @@
+.info {
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 20px;
+  font-size: 14px;
+
+  button {
+    font-size: 13px;
+  }
+}
+
+.userAvatar {
+  border-radius: 50%;
+  margin-right: 5px;
+  vertical-align: -7px;
+  height: 23px;
+}
+
+.userName {
+  margin-right: 10px;
+  font-size: 14px;
+}

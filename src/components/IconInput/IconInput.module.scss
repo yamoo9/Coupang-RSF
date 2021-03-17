@@ -1,0 +1,14 @@
+.iconInput {
+  display: inline-flex;
+  flex-direction: column;
+  border: 1px solid #cccccc;
+
+  &Error {
+    border: 0;
+  }
+
+  input:focus {
+    outline: none;
+    background: #f7f5f5;
+  }
+}
