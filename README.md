@@ -47,6 +47,6 @@ Design 패널을 통해 컴포넌트 개발 결과와 Figma 디자인 결과를 
 <br>
 <br>
 
-![](https://raw.githubusercontent.com/yamoo9/react-fast-campus/main/assets/cover.jpg?token=AAODZORLRDTHRI6BMG6H5KLAKHGWK)
+![](_/cover.jpg)
 
 <p align="center">Copyrightⓒ2021 <a href="https://euid.dev" target="_blank">이듬(E.UID)</a> All rights reserved.</p>
