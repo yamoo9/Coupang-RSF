@@ -5,15 +5,11 @@ import { StrictMode } from 'react'
 import { render } from 'react-dom'
 import './styles/index.scss'
 
-// import SignInPage from './pages/SignIn/SignIn'
-import LinkA from './components/LinkA/LinkA'
+import SignInPage from './pages/SignIn/SignIn'
 
 render(
   <StrictMode>
-    {/* <SignInPage /> */}
-    <LinkA external hasArrowIcon href="/signup">
-      회원가입
-    </LinkA>
+    <SignInPage />
   </StrictMode>,
   document.getElementById('root')
 )
