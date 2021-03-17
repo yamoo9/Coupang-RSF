@@ -38,6 +38,21 @@ Design 패널을 통해 컴포넌트 개발 결과와 Figma 디자인 결과를 
 
 ![](_/coupang_04.png)
 
+## Chromatic + GitHub Action CI
+
+[Chromatic](https://www.chromatic.com/) CLI 명령을 사용해 Storybook 빌드 → 배포합니다.
+
+> Chromatic 서비스를 이용하면 Storybook을 위한 자동화 된 워크 플로우로 UI를 더 빠르게 제공할 수 있습니다.
+
+![](_/Chromatic.png)
+
+배포에 성공하면 Chromatic 프로젝트 대시보드를 통해 빌드, 배포 결과를 확인할 수 있습니다.
+
+> Chromatic에 의해 자동 배포 된 [Storybook URL](https://6051cfad687b8f0021f5e0c1-ubfzwjegzx.chromatic.com/) | [라이브러리 공유 URL](https://www.chromatic.com/library?appId=6051cfad687b8f0021f5e0c1)
+
+![](_/Chromatic+GitHub_CI.png)
+
+
 <br>
 <br>
 
